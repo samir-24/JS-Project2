@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA USAGE</title>
+</head>
+
+<body>
+    <script>
+        let dataUsed = prompt("Enter total data used in a month in GB :");
+
+        if (dataUsed <= 0) {
+            alert("Enter a positive usage value.");
+        }
+        else if (dataUsed < 5) {
+            alert("Low usage");
+        }
+         else if (dataUsed >= 5 && dataUsed < 15) {
+            alert("Normal usage");
+        }
+         else if (dataUsed >= 15) {
+            alert("Heavy usage, consider a bigger plan");
+        }
+         else {
+            alert("Please enter a valid number.");
+        }
+
+    </script>
+</body>
+
+</html>
